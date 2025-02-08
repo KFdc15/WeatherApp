@@ -4,7 +4,3 @@ pluginManagement {
         mavenCentral()
     }
 }
-
-rootProject.name = "Converter"
-
-include(":app")

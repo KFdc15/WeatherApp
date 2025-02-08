@@ -1,9 +1,7 @@
 *
 !*/
 !/.gitignore
-!/app/build.gradle.kts
-!/app/src/main/AndroidManifest.xml
-!/app/src/main/java/vn/ac/vju/mad/converter/MainActivity.kt
+!/build.gradle.kts
 !/gradle.properties
 !/gradle/libs.versions.toml
 !/gradle/wrapper/gradle-wrapper.jar
@@ -11,3 +9,5 @@
 !/gradlew
 !/gradlew.bat
 !/settings.gradle.kts
+!/src/main/AndroidManifest.xml
+!/src/main/java/vn/ac/vju/mad/converter/MainActivity.kt
