@@ -1,9 +1,6 @@
-import com.android.sdklib.AndroidVersion.VersionCodes.LOLLIPOP
-import com.android.sdklib.AndroidVersion.VersionCodes.VANILLA_ICE_CREAM
-
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.android.application") version("8.8.0")
+    id("org.jetbrains.kotlin.android") version("2.1.0")
 }
 
 repositories {
@@ -12,17 +9,17 @@ repositories {
 }
 
 dependencies {
-    implementation(libs.androidx.activity.compose)
+    implementation("androidx.activity:activity-compose:1.10.0")
 }
 
 android {
     namespace = "vn.ac.vju.mad.converter"
-    compileSdk = VANILLA_ICE_CREAM
+    compileSdk = 35
     defaultConfig {
-        minSdk = LOLLIPOP
-        targetSdk = VANILLA_ICE_CREAM
+        minSdk = 21
+        targetSdk = 35
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = "1.8"
     }
 }
