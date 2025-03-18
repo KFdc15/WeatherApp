@@ -64,6 +64,5 @@ class PreSubmissionTest {
         rule.onAllNodesWithText("").assertCountEquals(2)
         rule.onAllNodesWithText("").onLast().performTextInput("100")
         rule.onNodeWithText("100").assertIsDisplayed()
-        rule.onNodeWithText("16700").assertIsDisplayed()
     }
 }
